@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Document</title>
+<link rel="stylesheet" href="Document_files/all.min.css"><link rel="stylesheet" href="Document_files/index.css"></head>
+<body>
+    <section class="hotels--containner-section">
+        <div class="hotels--titleplacer-div">
+            <h2 class="hotels--title-h2">HOTELS</h2>
+        </div>
+        <div class="hotels--containercards-div">
+            <div class="hotels--card-div">                
+                <img src="Document_files/garden.jpg" alt="Aqui va la imagen" class="hotels--image-img">                
+                <div class="hotels--cardname-div"></div>
+                    <div class="hotels--nameiconcontainner-div">
+                        <img src="Document_files/placeholder.png" class="hotels--icon-img" alt="Icono de imagen">
+                        <h3 class="hotels--name-h3"> Hotel Donde.</h3>
+                    </div>
+                    <p class="hotels--description-p">Lorem ipsum dolor 
+sit amet consectetur adipisicing elit. Deleniti quasi architecto 
+pariatur quae unde qui. Praesentium architecto dolor, eos vero sed 
+repellat. Facere, libero voluptatem</p>
+                    <div class="hotels--ratecontainner-div">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                      <div class="hotels--price-div">$90.00</div>
+                      <a href="#" class="btn">book now</a>
+                </div>    
+            </div>
+             
+        
+    </section>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

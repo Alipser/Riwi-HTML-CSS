@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 100%;
+}
+
+.hotels--containner-section{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.hotels--containercards-div{
+    width: 100vw;
+    height: 700px;
+    background-color: antiquewhite;
+}
+
+.hotels--card-div{
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 460px;
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    align-items: center;
+    padding: 4px;
+}
+
+.hotels--nameiconcontainner-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.hotels--ratecontainner-div{
+    width: 100%;
+}
+
+.hotels--description-p{
+    margin-bottom: 4px;
+    font-size: 1em;
+}
+
+.hotels--icon-img{
+    width: 30px;
+    height: 30px;
+}
+
+.hotels--image-img{
+    width: 280px;
+    border-radius: 4px;
+}
+

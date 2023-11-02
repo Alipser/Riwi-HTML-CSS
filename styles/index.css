@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+    text-decoration: none;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,1000&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-size: 100%;
+}
+
+.hotels--containner-section {
+    width: 90vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.hotels--titleplacer-div {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.hotels--containercards-div {
+
+    padding: 12px;
+    padding-left: 20px;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(250, 145, 8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-start;
+    overflow-y: hidden;
+}
+
+.hotels--title-h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+    margin: 0px auto;
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 0px aquamarine,
+        3px 3px 0px aquamarine,
+        6px 6px 0px #00000055;
+}
+
+.hotels--card-div {
+    width: 250px;
+    height: 345px;
+    min-width: 300px;
+    background-color: rgb(248, 247, 248);
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    align-items: center;
+    padding: 4px;
+    padding-top: 150px;
+    position: relative;
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+    /* flex: 1 0 30rem; */
+}
+
+.hotels--card-div:hover {
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.6);
+}
+
+.cards-abajo {
+    z-index: 3;
+    width: 300px;
+    position: absolute;
+    background-color: rgb(248, 247, 248);
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    align-items: center;
+}
+
+.hotels--nameiconcontainner-div {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.hotels--ratecontainner-div {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.hotels--description-p {
+
+    font-size: 0.8em;
+    height: 60px;
+
+    text-align: left;
+}
+
+.hotels--button-btn {
+    text-align: center;
+    padding-top: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+    border: 1px solid blue;
+    transition-delay: 10ms;
+}
+
+.hotels--button-btn:hover {
+    border: 1px solid rgb(248, 248, 250);
+    background-color: antiquewhite;
+}
+
+.hotels--price-div {
+    margin-bottom: 4px;
+}
+
+.hotels--image-img {
+    width: 300px;
+    height: 160px;
+    border-radius: 10px;
+    position: absolute;
+    top: -1px;
+}
+
+.hotels--icon-img {
+    width: 30px;
+    height: 30px;
+}
+
+.placer {
+    background-color: red;
+    margin: 0 auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    min-width: 300px;
+    max-width: 80vw;
+    max-height: 85vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.advices--containner-section {
+    width: 100vw;
+    height: 60vh;
+    background-color: blanchedalmond;
+}
+
+.advices--cardcontainer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    background-color: blueviolet;
+    gap: 2%;
+    padding: 20px;
+}
+
+.advices--placercardcontainer-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(43, 226, 89);
+    gap: 2%
+}
+
+.advices--card-div {
+   
+    width: 260px;
+    height: 10%;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.advices--card-div:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1)
+}
+
+.advices--card-div p{
+    margin: 0 auto;
+    height: 96px;
+    width: 200px;
+    font-size: 0.8em;
+    text-align: justify;  
+}
+
+.advices--card-div i{
+    font-size: 45px;
+    
+}
+
+
