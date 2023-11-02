@@ -4,21 +4,25 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;    
+    padding: 0;
     text-decoration: none;
 }
+
 *::-webkit-scrollbar {
     width: 16px;
 }
+
 *::-webkit-scrollbar-track {
-    background:transparent;
+    background: transparent;
 }
+
 *::-webkit-scrollbar-thumb {
     background-color: #8f54a0;
     border-radius: 10px;
     border: 3px solid #ffffff;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
 
@@ -69,7 +73,7 @@ html {
         6px 6px 0px #00000055;
 }
 
-.hotels--name-h3{
+.hotels--name-h3 {
     font-size: 1.17rem;
 }
 
@@ -190,7 +194,8 @@ html {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    height: fit-content;
+    overflow-y: hidden;
+    max-height: 40vh;
     background-color: blueviolet;
     gap: 2%;
     padding: 20px;
@@ -207,38 +212,38 @@ html {
 }
 
 .advices--card-div {
-   
+
     width: 260px;
     height: 10%;
     border-radius: .5rem;
     padding: 1rem;
     text-align: center;
-    
+
 }
 
 .advices--card-div:hover {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1)
 }
 
-.advices--card-div p{
+.advices--card-div p {
     margin: 0 auto;
     height: 96px;
     width: 200px;
     font-size: 0.8rem;
-    text-align: justify;  
+    text-align: justify;
 }
 
-.advices--card-div i{
+.advices--card-div i {
     font-size: 45px;
-    
 }
 
-footer{
+footer {
     width: 100vw;
-    height: 40vh;
+    height: 20vh;
     background-color: black;
     display: flex;
     justify-content: space-between;
+
     align-items: flex-start;
     padding: 30px 8%;
     background: #000;
@@ -246,4 +251,13 @@ footer{
     color: antiquewhite;
 }
 
+.footer--aboutus-p {
+    max-width: 260px;
+}
 
+.footer--verticline-div {
+    border-left: thick solid #ffffff;
+    height: 100%;
+    left: 50%;
+
+}
