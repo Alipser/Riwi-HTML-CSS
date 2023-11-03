@@ -64,6 +64,26 @@
         max-width: 100%;
         height: 400px;
     }
+
+    .carousel-controls .prev-slide {
+        width: 49%;
+        text-align: left;
+        left: 0;
+
+
+    }
+
+    .carousel-controls .next-slide {
+        width: 49%;
+        text-align: right;
+        right: 0;
+
+    }
+
+    .carousel {
+        height: 200px;
+    }
+
 }
 
 @media (max-width: 170px) {
