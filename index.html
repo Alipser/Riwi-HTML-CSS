@@ -16,7 +16,7 @@
   <header class="header">
     <a href="#home_id" class="logo">Medellín</a>
     <nav class="nav_bar">
-      <a href="#">Home</a>
+      <a href="#home_id">Home</a>
       <a href="#book_now_id">Book Now</a>
       <a href="#hotels_id">Hotels</a>
       <a href="#reviews_id">Review</a>
@@ -38,23 +38,37 @@
       </div>
 
       <ul class="menu">
-        <li><a href="#img1"></a></li>
-        <li><a href="#img2"></a></li>
-        <li><a href="#img3"></a></li>
+        <a href="#vid1">
+          <li></li>
+        </a>
+        <a href="#img1">
+          <li></li>
+        </a>
+        <a href="#img2">
+          <li></li>
+        </a>
+        <a href="#img3">
+          <li></li>
+        </a>
+        <a href="#img4">
+          <li></li>
+        </a>
       </ul>
     </section>
     <section class="slider">
 
       <ul class="imagenes">
-        <li id="img1"><img src="./bin/landing/img/medellin2.avif" alt="chiva"></li>
-        <li id="img2"><img src="./bin/landing/img/medellin1.jpg" alt="medellin"></li>
-        <li id="img3"><img src="./bin/landing/img/medellin4.jpg" alt="medellin de noche"></li>
+        <li id="vid1"><video src="bin/landing/img/pexels-franklin-eduardo-12409200 (1440p).mp4" autoplay muted
+            loop></video></li>
+        <li id="img1"><img src="bin/landing/img/medellin.jpg" alt="img medellin"></li>
+        <li id="img2"><img src="bin/landing/img/pexels-photo-12127531.webp" alt="img medellin"></li>
+        <li id="img3"><img src="bin/landing/img/medellin4.jpg" alt="img medellin night"></li>
+        <li id="img4"><img src="bin/landing/img/medellin2.avif" alt="img medellin night"></li>
       </ul>
 
     </section>
 
   </section>
-  <section class="pruebasec"></section>
 
   <section id="hotels_id" class="hotels--containner-section">
 
@@ -326,10 +340,49 @@
       </div>
 
     </div>
-
-
-
   </section>
+
+  <section id="book_now_id">
+    <div>
+      <h2 class="titulo_book_now">What are you waiting for? Book Now! <i class="fas fa-hotel"></i></h2>
+    </div>
+    <div class="contenido_book_now">
+      <div class="cont_img">
+        <img src="./bin/landing/img/azul.webp" alt="book now imagen">
+      </div>
+      <div class="cont_form">
+        <form action="" accept-charset="UTF-8">
+          <div class="campo">
+            <label for="name_hotel">Hotel <i class="fas fa-concierge-bell"></i></label>
+            <select name="name_hotel id=" name_hotel" required>
+              <option value="seli">Selina</option>
+              <option value="fact">Factory Lofts</option>
+              <option value="diez">Diez Hotel</option>
+              <option value="pati">Los Patios Hostel</option>
+              <option value="viaj">Viajero Hostel Medellín</option>
+              <option value="beto">Be Together</option>
+              <option value="jo&j">JO&JOE</option>
+              <option value="marq">Marquee</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="persons">How many <i class="fas fa-user"></i></label>
+            <input type="number" name="persons" id="persons" min="1" required>
+          </div>
+          <div class="campo">
+            <label for="Check in">Check in <i class="fas fa-plane-arrival"></i></label>
+            <input type="date" name="Check in" id="Check in" required>
+          </div>
+          <div class="campo">
+            <label for="Check out">Check out <i class="fas fa-plane-departure"></i></label>
+            <input type="date" name="Check out" id="Check out" required>
+          </div>
+          <button class="boton_form" type="submit">Search <i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
 
   <section id="gallery_id">
     <div class="hotels--titleplacer-div">
@@ -550,9 +603,9 @@
               <img class="revimage" src="./imagenes/jhonatan.jpeg" alt="" />
               <h3>Jhonatan Toro</h3>
               <p>
-                I'm Romario Julio, a digital nomad who had an exceptional
-                experience in Medellin at a premium hotel. I connected with
-                fellow travelers, expanding my international network
+                This coworking hotel website is excellent. It's user-friendly, offers detailed information, and provides
+                high-quality options. It makes finding temporary workspaces while traveling a breeze. Highly
+                recommended.
               </p>
               <div class="stars">
                 <i class="fas fa-star"></i>
