@@ -248,10 +248,12 @@ input:checked+.slide-container .nav label {
 
 .slide-image .box p {
   color: #666;
+  width: 100%;
 }
 
 .slide-image .box .stars i {
   color: orange;
+
 }
 
 /**/

@@ -1,4 +1,29 @@
 @media (max-width: 768px) {
+    .container{
+        flex-wrap: nowrap ;
+        overflow: scroll;
+        flex-direction: column;
+        width: 100vw;
+        
+    }
+
+
+    .container .card {
+      width: 100%;
+      height: 100px;
+    
+    
+    }
+    .container .card .content{
+        width: 100%;
+        height: 100px;
+      
+      
+      }
+
+    
+
+
     html {
         font-size: 65%
     }
