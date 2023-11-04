@@ -36,6 +36,7 @@
 
 /*carrousel*/
 .carousel {
+  height: 500px;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -116,6 +117,7 @@ ul.slides input {
   width: 49%;
   text-align: left;
   left: 0;
+
 }
 
 .carousel-controls .next-slide {
@@ -246,10 +248,12 @@ input:checked+.slide-container .nav label {
 
 .slide-image .box p {
   color: #666;
+  width: 100%;
 }
 
 .slide-image .box .stars i {
   color: orange;
+
 }
 
 /**/

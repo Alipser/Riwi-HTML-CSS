@@ -1,4 +1,90 @@
 @media (max-width: 768px) {
+
+    .container{
+        align-items: center;
+        overflow: scroll;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        
+        
+    }
+    .card .imgcard {
+        width: 250px;
+        height: 250px;
+      }
+      
+
+
+
+    .container .card {
+      width: 250px;
+      height: 250px;  
+    }
+    /*content card*/
+    .container .card .content {
+        width: 250px;
+        height: 250px;  
+        display: flex;
+      
+        position: absolute;
+        top: -200%;
+        left: 0;
+        height: 230px;
+        width: 320px;
+        text-align: center;
+        background: rgba(0, 0, 0);
+        padding-top: 5rem;
+      }
+      
+      .container .card:hover .content {
+        width: fit-content;
+        top: 0;
+
+        text-align: center;
+      }
+      
+      .container .card .content p {
+        font-size: 5px;
+        width: fit-content;
+        
+        
+      
+        color: #eee;
+        text-align: center;
+      }
+      
+      .container .card .content h3 {
+        font-size: 1.5rem;
+        color: #eee;
+        text-align: center;
+      }
+/*content card*/
+/*preview*/
+
+label.prev-slide{
+  color: black;
+}
+label.next-slide{
+  height: 200px;
+
+}
+ul.slides {
+  height: 200px;
+  overflow: hidden;
+  list-style: none;
+}
+
+
+  
+
+
+/*preview*/
+
+    
+
+
     html {
         font-size: 75%
     }
@@ -64,6 +150,43 @@
         max-width: 100%;
         height: 400px;
     }
+
+    .carousel-dots {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      z-index: 999;
+      text-align: center;
+    }
+    .carousel-dots .carousel-dot {
+
+      width: 10px;
+      height: 10px;
+      background-color: aquamarine;
+
+    }
+
+    .carousel-controls .prev-slide {
+        width: 49%;
+        text-align: left;
+        left: 0;
+
+
+    }
+
+    .carousel-controls .next-slide {
+        width: 49%;
+        text-align: right;
+        right: 0;
+
+    }
+
+    .carousel {
+        height: 200px;
+    }
+
 }
 
 @media (max-width: 170px) {
