@@ -32,8 +32,12 @@ html {
     scroll-behavior: smooth;
 }
 
+#burguerMenu{
+    display: none;
+}
+
 .hotels--containner-section {
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
     background-color: rgb(255, 255, 255);
 }
@@ -240,7 +244,7 @@ html {
 
 footer {
     width: 100vw;
-    height: 20vh;
+    height: fit-content;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -256,9 +260,35 @@ footer {
     max-width: 30vw;
 }
 
-.footer--verticline-div {
+footer .footer--verticline-div{
     border-left: thick solid #ffffff;
-    height: 100%;
+    width: 5px;
+    height: 250px;
     left: 50%;
+}
 
+
+footer .footer--contactus-div a {
+    font-size: 1.1rem;
+    color:  antiquewhite;
+    font-weight: 500;
+    margin: 0 6px;
+    transition: .3s;
+}
+
+.footer--navigation-a div a{
+    display: block;    
+}
+
+.footer-link-div{
+    margin-bottom: 20px;
+}
+
+footer .footer-link-div a{
+    font-size: 1.1rem;
+    color:  antiquewhite;
+    font-weight: 500;
+    margin: 0 6px;
+    transition: .3s;
+    margin-bottom: 4px;
 }

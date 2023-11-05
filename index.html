@@ -20,8 +20,24 @@
       <a href="#book_now_id">Book Now</a>
       <a href="#hotels_id">Hotels</a>
       <a href="#reviews_id">Review</a>
-      <a href="#gallery_id">Gallery</a> <!--#gallery_id -->
+      <a href="#gallery_id">Gallery</a> 
       <a href="#contact_id">Contact</a>
+    </nav>
+    <nav role="navigation" id="burguerMenu">
+      <div id="header--menucontainner-div">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#home_id"><li>Home</li></a>
+      <a href="#book_now_id"><li>Book Now</li></a>
+      <a href="#hotels_id"><li>Hotels</li></a>
+      <a href="#reviews_id"><li>Reviews</li></a>
+      <a href="#gallery_id"><li>Gallery</li></a> 
+      <a href="#contact_id"><li>Contact</li></a>
+        </ul>
+      </div>
     </nav>
   </header>
   <section class="landing" id="home_id">
@@ -67,7 +83,6 @@
       </ul>
 
     </section>
-
   </section>
 
   <section id="hotels_id" class="hotels--containner-section">
@@ -299,6 +314,7 @@
 
 
   </section>
+
   <section class="advices--containner-section">
     <div class="hotels--titleplacer-div">
       <h2 class="hotels--title-h2">Advices</h2>
@@ -353,8 +369,8 @@
       <div class="cont_form">
         <form action="" accept-charset="UTF-8">
           <div class="campo">
-            <label for="name_hotel">Hotel <i class="fas fa-concierge-bell"></i></label>
-            <select name="name_hotel id=" name_hotel" required>
+            <label for="name_hotel"><i class="fas fa-concierge-bell"></i> Hotel </label>
+            <select name="name_hotel" id="name_hotel" required>
               <option value="seli">Selina</option>
               <option value="fact">Factory Lofts</option>
               <option value="diez">Diez Hotel</option>
@@ -366,23 +382,31 @@
             </select>
           </div>
           <div class="campo">
-            <label for="persons">How many <i class="fas fa-user"></i></label>
+            <label for="persons"><i class="fas fa-users"></i> How many</label>
             <input type="number" name="persons" id="persons" min="1" required>
           </div>
           <div class="campo">
-            <label for="Check in">Check in <i class="fas fa-plane-arrival"></i></label>
-            <input type="date" name="Check in" id="Check in" required>
+            <label for="Nombre"> <i class="fas fa-user"></i> Name</label>
+            <input type="text" name="name-reservation" id="name"  required>
           </div>
-          <div class="campo">
-            <label for="Check out">Check out <i class="fas fa-plane-departure"></i></label>
-            <input type="date" name="Check out" id="Check out" required>
+
+          <div style="display: flex;">
+            <div class="campo">
+              <label for="Check in">Check in <i class="fas fa-plane-arrival"></i></label>
+              <input type="date" name="Check in" id="Check in" required>
+            </div>
+            <div class="campo">
+              <label for="Check out">Check out <i class="fas fa-plane-departure"></i></label>
+              <input type="date" name="Check out" id="Check out" required>
+            </div>
+          
           </div>
+          
           <button class="boton_form" type="submit">Search <i class="fas fa-search"></i></button>
         </form>
       </div>
     </div>
   </section>
-
 
   <section id="gallery_id">
     <div class="hotels--titleplacer-div">
@@ -637,7 +661,7 @@
 
   </section>
 
-  <footer>
+  <footer id="contact_id">
     <div id="aboutus">
       <h2>About Us:</h2>
       <p class="footer--aboutus-p">
@@ -647,58 +671,68 @@
       </p>
 
     </div>
-    <div class="footer--verticline-div">
-    </div>
-    <div>
+    <div class="footer--verticline-div"> </div>
+    <div class="footer--contactus-div">
       <div>
         <p>Romario Julio</p>
         <a href="https://github.com/Alipser"><i class="fab fa-github"></i> Alipser</a>
-        <a href="https://wa.me/+573162828394"><i class="fab fa-whatsapp">+573162828394</i></a>
+        <div>
+          <a href="https://wa.me/+573162828394"><i class="fab fa-whatsapp">+573162828394</i></a>
+          
+          
+        </div>
 
       </div>
       <div>
         <p>Jhonatan Toro</p>
+        <div>
+          
+        </div>
         <a href="https://github.com/JhonatanTH7"><i class="fab fa-github"></i> JhonatanTH7</a>
-        <a href="https://wa.me/+573162828394"><i class="fab fa-whatsapp">+573162828394</i></a>
+        <div>
+          <a href="https://wa.me/+573226784358"><i class="fab fa-whatsapp">+573226784358</i></a>
+          
+          
+        </div>
+        
 
       </div>
       <div>
         <p>Wilmer Perez</p>
         <a href="https://github.com/Wilcorfis"><i class="fab fa-github"></i> Wilcorfis</a>
-        <a href="https://wa.me/+573162828394"><i class="fab fa-whatsapp">+573162828394</i></a>
+        <div>
+          <a href="https://wa.me/+573106697399"><i class="fab fa-whatsapp">+573106697399</i></a>
+        </div>
+        
 
       </div>
 
     </div>
     <div class="footer--verticline-div">
     </div>
-    <div>
-      <div>
+    <div class="footer--navigation-div">
+      <div class="footer-link-div">
         <a href="#">Home</a>
       </div>
-      <div>
+      <div class="footer-link-div">
         <a href="#book_now_id">Book Now</a>
       </div>
-      <div>
+      <div class="footer-link-div">
         <a href="#hotels_id">Hotels</a>
       </div>
-      <div>
+      <div class="footer-link-div">
         <a href="#reviews_id">Review</a>
       </div>
-      <div>
+      <div class="footer-link-div">
         <a href="#gallery_id">Gallery</a>
       </div>
-      <div>
+      <div class="footer-link-div">
         <a href="#contact_id">Contact</a>
       </div>
 
     </div>
 
   </footer>
-
-
-
-
 
 </body>
 

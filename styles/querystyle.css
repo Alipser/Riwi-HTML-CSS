@@ -1,4 +1,213 @@
 @media (max-width: 768px) {
+  
+  .footer--navigation-div{
+    display: none;
+  }
+
+  footer{
+    flex-direction: column;
+}
+
+.footer--contactus-div{
+
+  gap: 30px;
+  text-align: center;
+  margin: 0 auto;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+
+.footer--aboutus-p{
+  max-width: 100vw;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+  footer .footer--verticline-div{
+   display: none;
+}
+  .advices--placercardcontainer-div{
+    height: fit-content;
+  }
+  
+.advices--containner-section{
+  height: fit-content;
+}
+
+  #book_now_id .contenido_book_now .cont_form {
+
+    border: 0;
+    border-radius: 0;
+}
+
+  
+  #book_now_id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #333;
+    height: fit-content;
+}
+
+#book_now_id .contenido_book_now{
+  flex-direction: column;
+}
+  
+  .hotels--containner-section{
+    height: fit-content;
+  }
+  .advices--cardcontainer-div{
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+
+  .hotels--containercards-div{
+    overflow-x: hidden;
+    padding-left: 0;
+    padding-right: 0;
+    height: fit-content;
+  }
+  
+  .placer{
+    padding: 24px;
+    height: fit-content;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    justify-content: flex-start;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;    
+  }
+
+  .nav_bar{
+    display: none;
+   
+  }
+
+  #burguerMenu{
+    display: block;
+}
+  #header--menucontainner-div{
+    display: block;
+    position: relative;
+    top: 0px;
+    left: -2vw;  
+    z-index: 3;  
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #header--menucontainner-div a{
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  #header--menucontainner-div a:hover{
+    color: tomato;
+  }
+  
+  #header--menucontainner-div input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 5;   
+    -webkit-touch-callout: none;
+  }
+  
+  #header--menucontainner-div span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 3;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s linear,
+                background 0.5s linear,
+                opacity 0.55s ease;
+  }
+  
+  #header--menucontainner-div span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #header--menucontainner-div span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  
+  #header--menucontainner-div input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  #header--menucontainner-div input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #header--menucontainner-div input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  
+  #menu
+  {
+    display: none;
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -280px;
+    padding: 50px;
+    top:80px;
+    left: 15vw;
+      
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  #header--menucontainner-div input:checked ~ ul
+  {
+    display: block;
+    transform: none;
+  }
+
+
+
+
 
     .container{
         align-items: center;
@@ -186,10 +395,11 @@ ul.slides {
     .carousel {
         height: 200px;
     }
+  
+  }
 
-}
 
-@media (max-width: 170px) {
+/* @media (max-width: 170px) {
     html {
         font-size: 85%;
     }
@@ -200,4 +410,4 @@ ul.slides {
         text-align: center;
         font-size: 8px;
     }
-}
+} */

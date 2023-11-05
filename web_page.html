@@ -1,93 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
-    <title>Digital Nomads</title>
-</head>
+<style>
+  .booking-form {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #fff;
+}
 
-<body>
-    <header class="header">
-        <a href="#home_id" class="logo">Medellín</a>
-        <nav class="nav_bar">
-            <a href="#home_id">Home</a>
-            <a href="#book_now_id">Book Now</a>
-            <a href="#hotels_id">Hotels</a>
-            <a href="#review_id">Review</a>
-            <a href="#gallery_id">Gallery</a>
-            <a href="#contact_id">Contact</a>
-        </nav>
-    </header>
-    <section class="landing" id="home_id">
-        <section class="home">
-            <div class="home_content">
-                <h1>Welcome, Digital Nomads!</h1>
-                <h3>Unlock Medellin's Digital Nomad Lifestyle</h3>
-                <p> This is your gateway to discovering the best hotels and invaluable advice for a seamless stay in
-                    this dynamic
-                    city. Whether you're in pursuit of a comfortable coworking space, local insights, or tips for
-                    exploring
-                    the City of Eternal Spring, we've got you covered.</p>
-                <a href="#" class="btn">Get Started </a>
-            </div>
+div.elem-group {
+  margin: 20px 0;
+}
 
-            <ul class="menu">
-                <li><a href="#img1"></a></li>
-                <li><a href="#img2"></a></li>
-                <li><a href="#img3"></a></li>
-            </ul>
-        </section>
-        <section class="slider">
-            <ul class="imagenes">
-                <li id="img1"><img src="./img/medellin2.avif" alt="chiva"></li>
-                <li id="img2"><img src="./img/medellin1.jpg" alt="medellin"></li>
-                <li id="img3"><img src="./img/medellin4.jpg" alt="medellin de noche"></li>
-            </ul>
-        </section>
-    </section>
-    
-    <section id="book_now_id">
-        <h2 class="titulo_book_now">What are you waiting for? Book Now!</h2>
-        <div class="contenido_book_now">
-            <div>
-                <img src="./img/book_now.png" alt="book now imagen">
-            </div>
-            <form action="" accept-charset="UTF-8">
-                <div>
-                    <label for="name">Hotel</label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div>
-                    <label for="persons">How many</label>
-                    <input type="number" name="persons" id="persons" min="1" required>
-                </div>
-                <div>
-                    <label for="arrival">Arrival</label>
-                    <input type="date" name="arrival" id="arrival" required>
-                </div>
-                <div>
-                    <label for="leaving">Leaving</label>
-                    <input type="date" name="leaving" id="leaving" required>
-                </div>
-                <input type="submit" value="Search" id="">
-            </form>
-        </div>
-    </section>
-    <section id="hotels_id">
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
 
-    </section>
-    <section id="review_id">
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
 
-    </section>
-    <section id="gallery_id">
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
 
-    </section>
-    <footer id="contact_id">
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
 
-    </footer>
-</body>
+textarea {
+  height: 250px;
+}
 
-</html>
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+button:hover {
+  background: #333;
+}
+</style>
+<form class="booking-form" action="#" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose a Room from the List</option>
+        <option value="connecting">Connecting</option>
+        <option value="adjoining">Adjoining</option>
+        <option value="adjacent">Adjacent</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book The Rooms</button>
+</form>
