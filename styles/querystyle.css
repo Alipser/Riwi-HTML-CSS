@@ -1,8 +1,12 @@
 @media (max-width: 768px) {
   
-  .home{
-    height: 90vh;
+
+  
+  #vid1, .videoNoCell{
+    display: none;
   }
+
+ 
 
   
   .footer--navigation-div{
