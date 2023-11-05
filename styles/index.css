@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,1000&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --PrimaryColor: #F05D23;
+    --SecondaryColor: #2274A5;
+    --ContrastColor: #577590;
+    --SoftContrast: #FAEAD6;
+    --Black: #221F1D;
+    --Black1: #3b3632;
+    --grey: #aeaba9;
+    --Offwhite: #f6f3f0;
+    --white: #fff
+}
+
+
+
+body{
+    background-color: var(--SoftContrast);
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +26,8 @@
 }
 
 *::-webkit-scrollbar {
-    width: 16px;
+    width: 8px;
+    height: 8px;
 }
 
 *::-webkit-scrollbar-track {
@@ -17,9 +35,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #8f54a0;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
+    background-color: var(--PrimaryColor);
 }
 
 body {
@@ -39,7 +55,7 @@ html {
 .hotels--containner-section {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--Black);
 }
 
 .hotels--titleplacer-div {
@@ -57,7 +73,7 @@ html {
     padding-left: 20px;
     width: 100vw;
     height: 90vh;
-    background-color: rgb(250, 145, 8);
+    background-color: var(--SecondaryColor);
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -66,6 +82,7 @@ html {
 }
 
 .hotels--title-h2 {
+    color: var(--SoftContrast);
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
     font-weight: 900;
@@ -73,20 +90,20 @@ html {
     margin: 0px auto;
     font-size: 4rem;
     letter-spacing: 5px;
-    text-shadow: -1px -1px 0px aquamarine,
-        3px 3px 0px aquamarine,
-        6px 6px 0px #00000055;
+    text-shadow: -1px -1px 0px var(--ContrastColor),
+        3px 3px 0px var(--SecondaryColor)
 }
 
 .hotels--name-h3 {
     font-size: 1.17rem;
+    color: var(--Black1);
 }
 
 .hotels--card-div {
     width: 250px;
     height: 345px;
     min-width: 300px;
-    background-color: rgb(248, 247, 248);
+    background-color: var(--Offwhite);
     border-radius: 3%;
     display: flex;
     flex-direction: column;
@@ -101,20 +118,26 @@ html {
 }
 
 .hotels--card-div:hover {
-    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 7px 7px rgba(38, 15, 6, 0.6);
+
+
 }
 
 .cards-abajo {
     z-index: 3;
     width: 300px;
     position: absolute;
-    background-color: rgb(248, 247, 248);
+    background-color: var(--Offwhite);
     display: flex;
     flex-direction: column;
     padding-top: 4px;
     padding-left: 4px;
     padding-right: 4px;
     align-items: center;
+}
+
+.cards-abajo i{
+    color: #F05D23;
 }
 
 .hotels--nameiconcontainner-div {
@@ -132,10 +155,8 @@ html {
 }
 
 .hotels--description-p {
-
     font-size: 0.8rem;
     height: 60px;
-
     text-align: left;
 }
 
@@ -144,15 +165,19 @@ html {
     padding-top: 4px;
     text-decoration: none;
     cursor: pointer;
-    width: 120px;
+    width: 100px;
     height: 30px;
-    border: 1px solid blue;
+    border-radius: 12px;
+    color: var(--Offwhite);
+    background-color: var(--ContrastColor);
+    border: 1px solid var(--SecondaryColor);
     transition-delay: 10ms;
+
 }
 
 .hotels--button-btn:hover {
-    border: 1px solid rgb(248, 248, 250);
-    background-color: antiquewhite;
+    border: 1px solid var(--ContrastColor);
+    background-color: var(--Black1);
 }
 
 .hotels--price-div {
@@ -173,7 +198,7 @@ html {
 }
 
 .placer {
-    background-color: rgb(56, 44, 44);
+
     margin: 0 auto;
     width: auto;
     display: flex;
@@ -181,7 +206,7 @@ html {
     justify-content: center;
     gap: 20px;
     min-width: 300px;
-    max-width: 80vw;
+
     max-height: 85vh;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -190,7 +215,11 @@ html {
 .advices--containner-section {
     width: 100vw;
     height: 60vh;
-    background-color: blanchedalmond;
+    background-color: var(--Black1);
+}
+
+.advices--containner-section i{
+    color: var(--PrimaryColor);
 }
 
 .advices--cardcontainer-div {
@@ -201,7 +230,7 @@ html {
     width: 100%;
     overflow-y: hidden;
     max-height: 40vh;
-    background-color: blueviolet;
+    background-color: var(--SecondaryColor);
     gap: 2%;
     padding: 20px;
 }
@@ -212,17 +241,24 @@ html {
     flex-wrap: nowrap;
     width: 100%;
     height: 50vh;
-    background-color: rgb(43, 226, 89);
+
     gap: 2%
 }
 
 .advices--card-div {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 15px;
     width: 260px;
     height: 10%;
     border-radius: .5rem;
-    padding: 1rem;
+    padding-top: 60px;
+    
     text-align: center;
+    background-color: var(--Offwhite);
 
 }
 
@@ -251,7 +287,7 @@ footer {
 
     align-items: flex-start;
     padding: 30px 8%;
-    background: #000;
+    background: #221f1d;
     font-family: 'Playpen Sans', cursive;
     color: antiquewhite;
 }
@@ -286,7 +322,7 @@ footer .footer--contactus-div a {
 
 footer .footer-link-div a{
     font-size: 1.1rem;
-    color:  antiquewhite;
+    color:  #faead6;
     font-weight: 500;
     margin: 0 6px;
     transition: .3s;

@@ -190,7 +190,7 @@ input:checked+.slide-container .nav label {
 .container .card .content {
   position: absolute;
   top: -200%;
-  left: 0;
+  left: -15px;
   height: 230px;
   width: 320px;
   text-align: center;
@@ -200,21 +200,15 @@ input:checked+.slide-container .nav label {
 
 .container .card:hover .content {
   top: 0;
+
   display: inline-block;
   text-align: center;
 }
 
 .container .card .content p {
-  font-size: 1rem;
-  /* width: 100%;
-  height: 100px; */
-  background-color: red;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-
+  font-size: 0.9rem;
+  margin: 0 auto;
+  width: 250px;
   color: #eee;
   text-align: center;
 }
