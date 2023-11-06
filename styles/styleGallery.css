@@ -44,7 +44,7 @@
 ul.slides {
   display: block;
   position: relative;
-  height: 600px;
+  height: 400px;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -152,6 +152,7 @@ input:checked+.slide-container .slide-image {
 }
 
 input:checked+.slide-container .carousel-controls label {
+  height: 50vh;
   display: block;
 }
 
