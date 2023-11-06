@@ -1,112 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<style>
-  .booking-form {
-  width: 500px;
-  margin: 0 auto;
-  padding: 50px;
-  background: #fff;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="styles/styleLanding.css">
+  <link rel="stylesheet" href="./styles/styleGallery.css">
+  <link rel="stylesheet" href="./styles/querystyle.css">
+  <title>Digital Nomads</title>
+</head>
 
-div.elem-group {
-  margin: 20px 0;
-}
+<body>
+  <header id="header" class="header">
+    <div class="header--sideheader-div">
+      <a href="#home_id" class="logo">Digital Nomads</a>
+      <img id="logo" src="./logo.png" alt="logo">
+      
+    </div>
+    
+    <nav class="nav_bar">
+      <a href="#home_id">Inicio</a>
+      <a href="#book_now_id">Reserva</a>
+      <a href="#hotels_id">Hoteles</a>
+      <a href="#reviews_id">Reseñas</a>
+      <a href="#gallery_id">Galeria</a> 
+      <a href="#contact_id">Contactanos</a>
+    </nav>
 
-div.elem-group.inlined {
-  width: 49%;
-  display: inline-block;
-  float: left;
-  margin-left: 1%;
-}
+    <nav role="navigation" id="burguerMenu">
+      <div id="header--menucontainner-div">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="#home_id"><li>Inicio</li></a>
+      <a href="#book_now_id"><li>Reserva Now</li></a>
+      <a href="#hotels_id"><li>Hoteles</li></a>
+      <a href="#reviews_id"><li>Reseñas</li></a>
+      <a href="#gallery_id"><li>Galeria</li></a> 
+      <a href="#contact_id"><li>Contactanos</li></a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="landing" id="home_id">
+    <section class="home">
+      <div class="home_content">
+        <h1>¡Bienvenidos, nómadas digitales!</h1>
+        <h3>Desbloquea el estilo de vida nómada digital de Medellín</h3>
+        <p> Esta es su puerta de entrada para descubrir los mejores hoteles y valiosos consejos para una estancia perfecta en esta dinámica ciudad. Ya sea que esté buscando un espacio de coworking cómodo, información local o consejos para explorar la Ciudad de la Eterna primavera. </p>
+        <a href="#header" class="btn">Empecemos</a>
+      </div>
 
-label {
-  display: block;
-  font-family: 'Nanum Gothic';
-  padding-bottom: 10px;
-  font-size: 1.25em;
-}
+      <ul class="menu">
+        <a class="videoNoCell" href="#vid1">
+          <li></li>
+        </a>
+        <a href="#img1">
+          <li></li>
+        </a>
+        <a href="#img2">
+          <li></li>
+        </a>
+        <a href="#img3">
+          <li></li>
+        </a>
+        <a href="#img4">
+          <li></li>
+        </a>
+      </ul>
+    </section>
+    <section class="slider">
 
-input, select, textarea {
-  border-radius: 2px;
-  border: 2px solid #777;
-  box-sizing: border-box;
-  font-size: 1.25em;
-  font-family: 'Nanum Gothic';
-  width: 100%;
-  padding: 10px;
-}
+      <ul class="imagenes">
+        <li id="vid1"><video src="bin/landing/img/pexels-franklin-eduardo-12409200 (1440p).mp4" autoplay muted
+            loop></video></li>
+        <li id="img1"><img src="bin/landing/img/medellin.jpg" alt="img medellin"></li>
+        <li id="img2"><img src="bin/landing/img/pexels-photo-12127531.webp" alt="img medellin"></li>
+        <li id="img3"><img src="bin/landing/img/medellin4.jpg" alt="img medellin night"></li>
+        <li id="img4"><img src="bin/landing/img/medellin2.avif" alt="img medellin night"></li>
+      </ul>
 
-div.elem-group.inlined input {
-  width: 95%;
-  display: inline-block;
-}
+    </section>
+  </section>
 
-textarea {
-  height: 250px;
-}
+  <section id="hotels_id" class="hotels--containner-section">
 
-hr {
-  border: 1px dotted #ccc;
-}
+    <div class="hotels--titleplacer-div">
+      <h2 class="hotels--title-h2">HOTELES</h2>
+    </div>
 
-button {
-  height: 50px;
-  background: orange;
-  border: none;
-  color: white;
-  font-size: 1.25em;
-  font-family: 'Nanum Gothic';
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 0 12px;
-}
+    <div class="hotels--containercards-div">
+      <div class="placer">
+        <div class="hotels--card-div">
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipPIfS05kmLYQbkJMTI6aYUVlE1bRi4c1NtstYq5=s287-w287-h192-n-k-no-v1"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
 
-button:hover {
-  background: #333;
-}
-</style>
-<form class="booking-form" action="#" method="post">
-  <div class="elem-group">
-    <label for="name">Your Name</label>
-    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
-  </div>
-  <div class="elem-group">
-    <label for="email">Your E-mail</label>
-    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
-  </div>
-  <div class="elem-group">
-    <label for="phone">Your Phone</label>
-    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-  </div>
-  <hr>
-  <div class="elem-group inlined">
-    <label for="adult">Adults</label>
-    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="child">Children</label>
-    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="checkin-date">Check-in Date</label>
-    <input type="date" id="checkin-date" name="checkin" required>
-  </div>
-  <div class="elem-group inlined">
-    <label for="checkout-date">Check-out Date</label>
-    <input type="date" id="checkout-date" name="checkout" required>
-  </div>
-  <div class="elem-group">
-    <label for="room-selection">Select Room Preference</label>
-    <select id="room-selection" name="room_preference" required>
-        <option value="">Choose a Room from the List</option>
-        <option value="connecting">Connecting</option>
-        <option value="adjoining">Adjoining</option>
-        <option value="adjacent">Adjacent</option>
-    </select>
-  </div>
-  <hr>
-  <div class="elem-group">
-    <label for="message">Anything Else?</label>
-    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
-  </div>
-  <button type="submit">Book The Rooms</button>
-</form>
+              <h3 class="hotels--name-h3">Selina</h3>
+            </div>
+            <p class="hotels--description-p">Ofrece a sus huéspedes hermosos lugares para hospedarse, viajar y trabajar en el extranjero de manera indefinida. Combinando alojamientos bellamente diseñados con coworking, recreación, bienestar y experiencias locales.</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$101.17 | <i class="fa fa-user" aria-hidden="true"></i></div>
+            <a href="https://www.selina.com/es/colombia/medellin/" target="_blank" class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+        </div>
+        <div class="hotels--card-div">
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipON7Qth8GF4QOyrsxmr6Y2iOphO6reVJClTX5gz=s287-w287-h192-n-k-no-v1"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
+
+              <h3 class="hotels--name-h3"> Factory Lofts</h3>
+            </div>
+            <p class="hotels--description-p">Espacio de coworking tipo loft moderno con diseño abierto, luz natural y atmósfera colaborativa para el trabajo productivo y la creatividad.</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$97.99 | <i class="fa fa-user" aria-hidden="true"></i> </div>
+            <a href="http://factory-lofts.medellinhotel.net/es/" target="_blank" class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+        </div>
+        <div class="hotels--card-div">
+          <img
+            src="https://static.wixstatic.com/media/f05047_31983d015aaf402bba3381fd1bcf7bc3~mv2.jpg/v1/fill/w_960,h_615,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f05047_31983d015aaf402bba3381fd1bcf7bc3~mv2.jpg"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
+
+              <h3 class="hotels--name-h3"> Diez Hotel</h3>
+            </div>
+            <p class="hotels--description-p">Un espacio de trabajo urbano elegante que fomenta la innovación, la colaboración y experiencias gastronómicas inolvidables en un entorno vibrante y creativo.</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$94.350 | <i class="fa fa-user" aria-hidden="true"></i></div>
+            <a href="https://www.diezhotel.com/" target="_blank" class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+        </div>
+        <div class="hotels--card-div">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipMNX2Snbu4C3QmWUS8U989teOIk79JKoq0QNhu0=w600-h650-p-k-no"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
+
+              <h3 class="hotels--name-h3"> Los Patios Hostel</h3>
+            </div>
+            <p class="hotels--description-p">UEspacio de trabajo urbano con diseño moderno, que fomenta la innovación y la colaboración en una atmósfera vibrante y creativa.</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$105.20 | <i class="fa fa-user" aria-hidden="true"></i></div>
+            <a href="https://www.lospatioshb.com/" target="_blank" class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+        </div>
+        <div class="hotels--card-div">
+          <img
+            src="https://lh5.googleusercontent.com/p/AF1QipNd6kg5xBkC9Z7KyRznyV7qiAMKzDTCnE06Dl6h=s287-w287-h192-n-k-no-v1"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
+
+              <h3 class="hotels--name-h3"> Viajero Hostel Medellín</h3>
+            </div>
+            <p class="hotels--description-p">Un retiro exclusivo para el trabajo colaborativo, que ofrece espacios de trabajo elegantes y un oasis tranquilo junto a la piscina para mayor inspiración.</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$78.99 | <i class="fa fa-user" aria-hidden="true"></i></div>
+            <a href="https://www.viajerohostels.com/es/destinos-colombia/medellin/" target="_blank"
+              class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+        </div>
+        <div class="hotels--card-div">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipO72Ep1LoNy82axAPn-pDdN2Ao35HUsqUa02t0=s680-w680-h510"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
+
+              <h3 class="hotels--name-h3"> Be Together.</h3>
+            </div>
+            <p class="hotels--description-p">Ofrece vistas fascinantes, aire fresco y vibraciones animadas, lo que lo convierte en el escape perfecto para el coworking y momentos inolvidables.</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$95.00 | <i class="fa fa-user" aria-hidden="true"></i></div>
+            <a href="https://betogetherco.com/" target="_blank" class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+        </div>
+        <div class="hotels--card-div">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipNZJzCZ-E24dRoI4gXRifCFn5_tQhnW7fqx_cKk=w253-h168-k-no"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
+
+              <h3 class="hotels--name-h3"> JO&JOE</h3>
+            </div>
+            <p class="hotels--description-p">Combinando la asequibilidad del albergue con la comodidad del hotel, nuestro espacio ofrece camas ultracómodas para exploradores en solitario o en pareja. Ideal para espacios de trabajo entre aventuras.</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$86.00 | <i class="fa fa-user" aria-hidden="true"></i></div>
+            <a href="https://www.joandjoe.com/" target="_blank" class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+        </div>
+        <div class="hotels--card-div">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/295658163.jpg?k=da43905549c0c266c2160be1f574ef531704e6d3655fee50e9271e82b33365a7&o=&hp=1"
+            alt="Aqui va la imagen" class="hotels--image-img">
+          <div class="cards-abajo">
+            <div class="hotels--cardname-div"></div>
+            <div class="hotels--nameiconcontainner-div">
+
+              <i class="fa fa-map-signs " aria-hidden="true"></i>
+              <h3 class="hotels--name-h3"> Marquee</h3>
+            </div>
+            <p class="hotels--description-p">Instalaciones de lujo, Marquee Hotel Medellín es la opción ideal para viajeros que buscan una estadía inolvidable 5 estrellas en Medellín</p>
+            <div class="hotels--ratecontainner-div">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <div class="hotels--price-div">$109.00 | <i class="fa fa-user" aria-hidden="true"></i> </div>
+            <a href="https://marqueemedellin.com/" target="_blank" class="hotels--button-btn">Reserva</a>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="advices--containner-section">
+    <div class="hotels--titleplacer-div">
+      <h2 class="hotels--title-h2">Aconsejate</h2>
+    </div>
+
+    <div class="advices--placercardcontainer-div">
+      <div class="advices--cardcontainer-div">
+        <div class="advices--card-div">
+          <i class="fas fa-hotel"></i>
+          <h3>Comodos Hoteles</h3>
+          <p>
+            Opte por estancias prolongadas en nuestros acogedores hoteles y disfrute de importantes descuentos. ¡Tu bolsillo y tu comodidad te agradecerán que elijas alquileres a largo plazo!
+          </p>
+        </div>
+        <div class="advices--card-div">
+          <i class="fas fa-utensils"></i>
+          <h3>Sabores del Nuevo Mundo</h3>
+          <p>
+            Explora los sabores tropicales al máximo adoptando la diversidad de opciones veganas y de origen vegetal.
+          </p>
+        </div>
+        <div class="advices--card-div">
+          <i class="fas fa-plane"></i>
+          <h3>Ferias y Fiestas </h3>
+          <p>
+            Durante las fiestas de la ciudad. Experimente una cultura vibrante, flores coloridas y celebraciones animadas durante una
+            estancia inolvidable.
+          </p>
+        </div>
+        <div class="advices--card-div">
+          <i class="fas fa-hiking"></i>
+          <h3>Aventurate</h3>
+          <p>
+            Explorar las impresionantes maravillas naturales cerca de Medellín es una obligación para los buscadores de aventuras. Desde caminatas por senderos exuberantes hasta vuelos en parapente sobre paisajes impresionantes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="book_now_id">
+    <div>
+      <h2 class="titulo_book_now">¿Qué Esperas? ¡Reserva Ahora! <i class="fas fa-hotel"></i></h2>
+    </div>
+    <div class="contenido_book_now">
+      <div class="cont_img">
+        <img src="./bin/landing/img/azul.webp" alt="book now imagen">
+      </div>
+      <div class="cont_form">
+        <form action="" accept-charset="UTF-8">
+          <div class="campo">
+            <label for="name_hotel"><i class="fas fa-concierge-bell"></i> Hoteles </label>
+            <select name="name_hotel" id="name_hotel" required>
+              <option value="seli">Selina</option>
+              <option value="fact">Factory Lofts</option>
+              <option value="diez">Diez Hotel</option>
+              <option value="pati">Los Patios Hostel</option>
+              <option value="viaj">Viajero Hostel Medellín</option>
+              <option value="beto">Be Together</option>
+              <option value="jo&j">JO&JOE</option>
+              <option value="marq">Marquee</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="persons"><i class="fas fa-users"></i> Numero de Personas</label>
+            <input type="number" name="persons" id="persons" min="1" required>
+          </div>
+          <div class="campo">
+            <label for="Nombre"> <i class="fas fa-user"></i> Nombre</label>
+            <input type="text" name="name-reservation" id="name"  required>
+          </div>
+
+          <div style="display: flex;">
+            <div class="campo">
+              <label for="Check in">Ingreso <i class="fas fa-plane-arrival"></i></label>
+              <input type="date" name="Check in" id="Check in" required>
+            </div>
+            <div class="campo">
+              <label for="Check out">Salida<i class="fas fa-plane-departure"></i></label>
+              <input type="date" name="Check out" id="Check out" required>
+            </div>
+          
+          </div>
+          
+          <button class="boton_form" type="submit">Busca <i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery_id">
+    <div class="hotels--titleplacer-div">
+      <h2 class="hotels--title-h2">Galleria</h2>
+    </div>
+    <div class="container">
+      <div class="card">
+        <h2 class="title-card">El Poblado</h2>
+        <div class="content">
+          <p>
+            Provenza, en El Poblado, Medellín, es aclamada como una de las "calles geniales" del mundo por la revista Time Out.
+          </p>
+        </div>
+        <img src="https://vivirenelpoblado.com/wp-content/uploads/2022/08/Provenza-en-El-Poblado-Medellin-una-de-las-calles-mas-cool-del-mundo-1068x580.jpg" alt="Foto de Provenza Medellin" class="imgcard" />
+      </div>
+      <div class="card">
+        <div class="content">
+          <p>
+            El Complejo Acuático 'César Zapata' cuenta con doce piscinas gratuitas accesibles a todos los visitantes.
+          </p>
+        </div>
+        <h2 class="title-card">Selina</h2>
+        <img src="https://arquitecturapanamericana.com/wp-content/uploads/2016/02/COMPLEJO-ACUATICO-DE-MEDELLIN.-003.jpg" alt="" class="imgcard" />
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Pruebe los sabores de los cafés orgánicos de origen local y disfrute de la comodidad de varios espacios de coworking en toda la ciudad.
+          </p>
+        </div>
+        <h2 class="title-card">Café and Coworking</h2>
+        <img src="./imagenes/cafevelvet.jpg" alt="" class="imgcard" />
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Terraza exterior, Capacidad, Acceso para silla de ruedas, Sirve alcohol,
+            Vino y cerveza, Wifi gratis, Servicio de mesa, Para llevar Ver todo
+            detalles características, Carrera 37 No 8a-46 Vía Primavera - Poblado
+          </p>
+        </div>
+        <h2 class="title-card">Feria de las Flores</h2>
+        <img src="https://blog.uber-cdn.com/cdn-cgi/image/width=2160,height=1080,quality=80,onerror=redirect,format=auto/wp-content/uploads/2018/07/CO_Que%CC%81-hacer-en-la-Feria-de-las-Flores-un-festival-de-color-y-alegri%CC%81a-.jpg" alt="" class="imgcard" />
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Un lugar espectacular en un sector tradicional de Medellín, 70. Es
+            Ofrece comida sana, vegetariana y vegana, además de vinos.
+          </p>
+
+        </div>
+        <h2 class="title-card">Naturalia Cafe</h2>
+        <img src="./imagenes/naturaliacafe.jpeg" alt="" class="imgcard" />
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Semilla Café Coworking es un negocio ubicado en Calle 39, Cra. 73
+            #7 en la ciudad de Medellín. Este espacio de coworking es mucho más
+            que simplemente un lugar para trabajar.
+          </p>
+
+        </div>
+        <h2 class="title-card">Semilla cafe</h2>
+        <img src="./imagenes/semillacafe.jpg" alt="" class="imgcard" />
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Hemos construido una comunidad en el corazón de Laureles para locales, nómadas digitales, creativos, viajeros, empresarios y amantes del café.
+          </p>
+
+        </div>
+        <h2 class="title-card">Pergamino cafe</h2>
+        <img src="./imagenes/pergaminocafe.jpg" alt="" class="imgcard" />
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Ubicado en el corazón de El Poblado, Quokka Coworking redefine el concepto de Coworking en Medellín. Más que un simple cowork, salas de reuniones avanzadas e insonorizadas. 
+          </p>
+
+        </div>
+        <h2 class="title-card">Quokka</h2>
+        <img src="./imagenes/quokka.jpg" alt="" class="imgcard" />
+      </div>
+    </div>
+
+  </section>
+
+  <section id="reviews_id">
+    <div class="hotels--titleplacer-div">
+      <h2 class="hotels--title-h2">Reseñas</h2>
+    </div>
+
+    <div class="carousel">
+      <ul class="slides">
+        <input type="radio" name="radio-buttons" id="img-1" checked />
+        <li class="slide-container">
+          <div class="slide-image">
+            <div class="box">
+              <img class="revimage" src="imagenes/romario.jpeg" alt="" />
+              <h3>Romario julio</h3>
+              <p>
+                Soy Romario Julio, un nómada digital que tuvo una excepcional
+                Experiencia en Medellín en un hotel premium. me conecté con
+                compañeros de viaje, ampliando mi red en el exterior.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <label for="img-3" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-2" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-2" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <div class="box">
+              <img class="revimage" src="imagenes/wilmer.jpg" alt="" />
+              <h3>Wilmer Perez</h3>
+              <p>
+                Hola mi nombre es wilmer Andres perez me encanta codificar, soy
+                desarrollador de esta increíble página web, aquí puedes encontrar coworkings
+                donde aprender en mi tiempo libre.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <label for="img-1" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-3" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <input type="radio" name="radio-buttons" id="img-3" />
+        <li class="slide-container">
+          <div class="slide-image">
+              <div class="box">
+              <img class="revimage" src="./imagenes/jhonatan.jpeg" alt="" />
+              <h3>Jhonatan Toro</h3>
+              <p>
+                La web de este hotel coworking es excelente. Es fácil de usar, ofrece información detallada y proporciona
+                opciones de alta calidad. Hace que encontrar espacios de trabajo temporales mientras viaja sea muy fácil. Altamente
+                recomendado.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <label for="img-2" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-1" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+
+        <div class="carousel-dots">
+          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+        </div>
+      </ul>
+    </div>
+
+
+  </section>
+
+  <footer id="contact_id">
+    <div id="aboutus">
+      <h2>Nosotros :</h2>
+      <p class="footer--aboutus-p">
+        Tres estudiantes aspirantes a desarrolladores web, incursionando en el mundo de HTML y CSS, impulsados ​​por el sueño de
+        convirtiéndose en estrellas del desarrollo web. Nuestro objetivo es crear proyectos extraordinarios que resuenen entre los consumidores y
+        dejar un impacto duradero.
+      </p>
+
+    </div>
+    <div class="footer--verticline-div"> </div>
+    <div class="footer--contactus-div">
+      <div>
+        <p>Romario Julio</p>
+        <a href="https://github.com/Alipser"><i class="fab fa-github"></i> Alipser</a>
+        <div>
+          <a href="https://wa.me/+573162828394"><i class="fab fa-whatsapp">+573162828394</i></a>
+          
+          
+        </div>
+
+      </div>
+      <div>
+        <p>Jhonatan Toro</p>
+        <div>
+          
+        </div>
+        <a href="https://github.com/JhonatanTH7"><i class="fab fa-github"></i> JhonatanTH7</a>
+        <div>
+          <a href="https://wa.me/+573226784358"><i class="fab fa-whatsapp">+573226784358</i></a>
+          
+          
+        </div>
+        
+
+      </div>
+      <div>
+        <p>Wilmer Perez</p>
+        <a href="https://github.com/Wilcorfis"><i class="fab fa-github"></i> Wilcorfis</a>
+        <div>
+          <a href="https://wa.me/+573106697399"><i class="fab fa-whatsapp">+573106697399</i></a>
+        </div>
+        
+
+      </div>
+
+    </div>
+    <div class="footer--verticline-div">
+    </div>
+    <div class="footer--navigation-div">
+      <div class="footer-link-div">
+        <a href="#">Inicio</a>
+      </div>
+      <div class="footer-link-div">
+        <a href="#book_now_id">Reserva</a>
+      </div>
+      <div class="footer-link-div">
+        <a href="#hotels_id">Hoteles</a>
+      </div>
+      <div class="footer-link-div">
+        <a href="#reviews_id">Reseñas</a>
+      </div>
+      <div class="footer-link-div">
+        <a href="#gallery_id">Galeria</a>
+      </div>
+      <div class="footer-link-div">
+        <a href="#contact_id">Contactanos</a>
+      </div>
+
+      <div  class="footer-link-div" id='header-banderacnt-a'>
+        <a href="./index.html">En</a>
+        <img  clas="banderaHeader" src="./bin/landing/img/usa.png" alt="">
+      </div>
+
+      <div class="sliderHead">
+       
+        <input type="checkbox" id="sliderHeadCheckbox">
+        <label for="sliderHeadCheckbox" class="sliderHead-label">
+          <a href="./web_page.html">
+          
+          </a>
+        </label>
+    </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

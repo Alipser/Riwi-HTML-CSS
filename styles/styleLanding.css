@@ -20,6 +20,7 @@
     font-weight: 400;
 }
 
+
 .header .nav_bar a {
     font-size: 1.1rem;
     color: #fff;
@@ -88,6 +89,9 @@
     letter-spacing: 1px;
     font-weight: 600;
     border-radius: 6px;
+    gap: 4px;
+    display: flex;
+    width: fit-content;
 }
 
 .home .btn:hover {

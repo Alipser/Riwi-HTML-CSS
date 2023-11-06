@@ -13,8 +13,27 @@
     --white: #fff
 }
 
+#header-banderacnt-a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+#header-banderacnt-a img{
+    width: 20px;
+    height: 20px;
+}
 
+.header--sideheader-div{
+    position: relative;
+}
+#logo{
+    left: -50px;
+    top: -12px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
 body{
     background-color: var(--SoftContrast);
 }
@@ -40,6 +59,45 @@ body{
 
 body {
     overflow-x: hidden;
+}
+
+.header--sideheader-div{
+    display: flex;
+}
+
+.sliderHead {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sliderHead-label {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../bin/landing/img/usa.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#sliderHeadCheckbox{
+    display: none;
+}
+
+#sliderHeadCheckbox:checked + .sliderHead-label {
+    left: calc(100% - 28px);
+    background-image: url("../bin/landing/img/colombia.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -118,7 +176,7 @@ html {
 }
 
 .hotels--card-div:hover {
-    box-shadow: 5px 7px 7px rgba(38, 15, 6, 0.6);
+    box-shadow: 5px 7px 7px var(--PrimaryColor)
 
 
 }
